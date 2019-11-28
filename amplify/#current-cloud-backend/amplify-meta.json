@@ -1,0 +1,74 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplifynotetaker-20191120044419-authRole",
+			"UnauthRoleArn": "arn:aws:iam::445597643310:role/amplifynotetaker-20191120044419-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::445597643310:role/amplifynotetaker-20191120044419-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplifynotetaker-20191120044419-deployment",
+			"UnauthRoleName": "amplifynotetaker-20191120044419-unauthRole",
+			"StackName": "amplifynotetaker-20191120044419",
+			"StackId": "arn:aws:cloudformation:us-east-1:445597643310:stack/amplifynotetaker-20191120044419/52fb0680-0b7a-11ea-92d4-0a6641f83659"
+		}
+	},
+	"auth": {
+		"cognitoef9b513b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifynotetaker-20191120044419-deployment/amplify-cfn-templates/auth/cognitoef9b513b-cloudformation-template.yml",
+				"logicalId": "authcognitoef9b513b"
+			},
+			"lastPushTimeStamp": "2019-11-22T10:56:44.067Z",
+			"output": {
+				"AppClientSecret": "cebksvn50pt8t67sjv2ggt1n3kean33e87kt0e8i9ldh1ngbpmn",
+				"UserPoolId": "us-east-1_EQPFfEPIA",
+				"AppClientIDWeb": "2fm8p89m9ip9ef0gtvltrvihok",
+				"AppClientID": "6t65git8qs5pl2jpt9d5eaee2m",
+				"IdentityPoolId": "us-east-1:2bbdd557-443a-4c50-9dc0-911cc335b6e4",
+				"IdentityPoolName": "cognitoef9b513b_identitypool_ef9b513b",
+				"UserPoolName": "cognitoef9b513b_userpool_ef9b513b"
+			},
+			"lastPushDirHash": "dy4f9gfM5HO3OqZQ8D4RJWbNLBo="
+		}
+	},
+	"api": {
+		"amplifynotetaker": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "thdcn4me6rgyngl2c43f4s4jfi",
+				"GraphQLAPIEndpointOutput": "https://mdyvx4gp2zh27ercqnfqwlheve.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-vvpgzsiw5zhn5f3dxfh75rtnye",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_EQPFfEPIA",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_EQPFfEPIA",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_EQPFfEPIA"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifynotetaker-20191120044419-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiamplifynotetaker"
+			},
+			"lastPushTimeStamp": "2019-11-22T10:56:44.070Z",
+			"lastPushDirHash": "mKoqWmGLG73tUEcbzuLz3h4LqN8="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifynotetaker-20191120044419-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-11-22T10:56:44.075Z",
+			"output": {
+				"S3BucketSecureURL": "https://amplifynotetaker-20191122055504-hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://amplifynotetaker-20191122055504-hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "amplifynotetaker-20191122055504-hostingbucket"
+			},
+			"lastPushDirHash": "BMf+yJwmXwleHGqs44i6WTaPYkw="
+		}
+	}
+}
